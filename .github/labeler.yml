@@ -1,0 +1,17 @@
+bug:
+  - '버그'
+  - 'bug'
+  - 'error'
+  - '에러'
+  - '오류'
+  - 'exception'
+  - '예외'
+feature:
+  - 'feature'
+  - '기능'
+  - 'enhancement'
+  - '요청'
+documentation:
+  - 'docs'
+  - '문서'
+  - 'readme'
