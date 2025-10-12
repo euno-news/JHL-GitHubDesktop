@@ -14,6 +14,13 @@ GitHub Desktop처럼 Commit History 관리 뿐만 아니라 Org/Repo에 대한 �
 - GitHub Actions의 실패 원인을 진단하는 AI Agent 기능 지원
 - GitHub Activity에 대한 활동 통계 및 Metrics, Graph를 볼 수 있는 Analytics 모드 제공
 
+## 스크린샷
+
+<img width="2876" height="1703" alt="image" src="https://github.com/user-attachments/assets/d192b3d9-a03b-4270-b5e1-2d04307f7887" />
+<img width="2878" height="1706" alt="image" src="https://github.com/user-attachments/assets/dc0bef5a-21b5-45d2-8995-1a916cfb1778" />
+
+
+
 ## 라이선스
 - 개인적인 사용은 무료이나, 상업적인 사용은 금지합니다.
 - 단, DSDN을 통해 배포된 버전은 회사 내 자유롭게 사용 가능합니다!
