@@ -14,8 +14,3 @@ jobs:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
           enable-versioned-regex: false
-
-      - name: 자동 담당자 지정
-        uses: kentaro-m/auto-assign-action@v2.0.0
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
