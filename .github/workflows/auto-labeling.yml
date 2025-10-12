@@ -8,6 +8,9 @@ jobs:
   label-and-assign:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: 자동 라벨링
         uses: github/issue-labeler@v3.4
         with:
