@@ -1,0 +1,109 @@
+name: 🚀 신규 기능 요청
+description: 새로운 기능을 제안해주세요!
+title: "[기능] "
+labels: ["feature", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        JHL GitHub Desktop에 새로운 기능을 제안해 주셔서 감사합니다.
+        아직 존재하지 않는 새로운 기능에 대한 아이디어를 공유해 주세요.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: 제안하는 기능
+      description: 어떤 새로운 기능을 추가하면 좋을까요?
+      placeholder: 제안하고 싶은 기능에 대해 설명해 주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 해결하고자 하는 문제
+      description: 이 기능이 어떤 문제나 불편함을 해결하나요?
+      placeholder: 왜 이 기능이 필요한가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 제안하는 해결 방법
+      description: 이 기능이 어떻게 작동하면 좋을지 구체적으로 설명해 주세요.
+      placeholder: |
+        기능의 동작 방식, UI/UX, 사용 흐름 등을 자세히 설명해 주세요.
+        1. 사용자가 ...을 클릭하면
+        2. ...이 표시되고
+        3. ...을 할 수 있음
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 기대 효과
+      description: 이 기능이 추가되면 어떤 이점이 있을까요?
+      placeholder: 이 기능으로 인한 기대 효과를 설명해 주세요.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 기능 카테고리
+      description: 이 기능이 어떤 영역과 관련되어 있나요?
+      options:
+        - Repository 관리
+        - Commit 추적
+        - Actions/워크플로우
+        - Analytics/통계
+        - Notifications/알림
+        - UI/UX
+        - 성능 개선
+        - 보안
+        - 기타
+      multiple: true
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      description: 이 기능이 얼마나 중요하다고 생각하시나요?
+      options:
+        - 낮음 - 있으면 좋음
+        - 중간 - 유용할 것 같음
+        - 높음 - 매우 필요함
+        - 긴급 - 즉시 필요함
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 대안 방법
+      description: 고려한 다른 대안이나 유사한 기능의 예시가 있다면 설명해 주세요.
+      placeholder: 다른 앱이나 서비스의 유사 기능을 참고하셨나요?
+
+  - type: textarea
+    id: mockup
+    attributes:
+      label: 참고 자료 및 목업
+      description: 화면 목업, 다른 앱의 유사 기능 스크린샷 등이 있다면 공유해 주세요.
+      placeholder: 이미지를 드래그 앤 드롭하거나 붙여넣기 하세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 이 기능 제안에 대해 추가로 제공할 정보가 있나요?
+      placeholder: 다른 관련 정보나 컨텍스트를 자유롭게 작성해 주세요.
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: 기여 의향
+      description: 이 기능을 직접 구현하여 기여할 의향이 있으신가요?
+      options:
+        - label: 이 기능 구현에 기여할 의향이 있습니다.
