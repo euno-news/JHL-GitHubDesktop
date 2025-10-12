@@ -15,6 +15,6 @@ jobs:
           configuration-path: .github/labeler.yml
 
       - name: 자동 담당자 지정
-        uses: kentaro-m/auto-assign-action@v2.2.0
+        uses: kentaro-m/auto-assign-action@v2.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
