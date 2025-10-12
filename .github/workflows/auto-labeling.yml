@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 자동 라벨링
-        uses: github/issue-labeler@v3.44
+        uses: github/issue-labeler@v3.4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           configuration-path: .github/labeler.yml
