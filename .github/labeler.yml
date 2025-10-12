@@ -6,6 +6,7 @@ bug:
   - '오류'
   - 'exception'
   - '예외'
+  - '.*버그.*'
 enhancement:
   - 'feature'
   - '기능'
