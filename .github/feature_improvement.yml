@@ -1,0 +1,78 @@
+name: ✨ 기능 개선 요청
+description: 기존 기능의 개선이나 향상을 제안해주세요!
+title: "[개선] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        JHL GitHub Desktop의 기능 개선을 제안해 주셔서 감사합니다.
+        기존 기능을 더 나은 방향으로 발전시킬 수 있는 아이디어를 공유해 주세요.
+
+  - type: textarea
+    id: current-feature
+    attributes:
+      label: 현재 기능
+      description: 개선하고 싶은 현재 기능에 대해 설명해 주세요.
+      placeholder: 어떤 기능을 개선하고 싶으신가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 문제점 또는 불편한 점
+      description: 현재 기능의 어떤 부분이 불편하거나 개선이 필요한가요?
+      placeholder: 왜 이 개선이 필요한가요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: 제안하는 개선 방안
+      description: 어떻게 개선되면 좋을지 구체적으로 설명해 주세요.
+      placeholder: 어떤 방식으로 개선되면 좋을까요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 기대 효과
+      description: 이 개선이 적용되면 어떤 이점이 있을까요?
+      placeholder: 이 개선으로 인한 기대 효과를 설명해 주세요.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 대안 방법
+      description: 고려한 다른 대안이 있다면 설명해 주세요.
+      placeholder: 다른 해결 방법이나 접근 방식이 있나요?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 우선순위
+      description: 이 개선이 얼마나 중요하다고 생각하시나요?
+      options:
+        - 낮음 - 있으면 좋음
+        - 중간 - 불편하지만 사용 가능
+        - 높음 - 매우 필요함
+        - 긴급 - 즉시 필요함
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 참고 자료
+      description: 관련 스크린샷이나 다른 앱의 유사 기능 예시가 있다면 공유해 주세요.
+      placeholder: 스크린샷이나 참고 이미지를 드래그 앤 드롭하거나 붙여넣기 하세요.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 이 개선 제안에 대해 추가로 제공할 정보가 있나요?
+      placeholder: 다른 관련 정보나 컨텍스트를 자유롭게 작성해 주세요.
