@@ -1,0 +1,20 @@
+name: Issue Auto Labeling
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  label-and-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 자동 라벨링
+        uses: github/issue-labeler@v3
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          configuration-path: .github/labeler.yml
+
+      - name: 자동 담당자 지정
+        uses: kentaro-m/auto-assign-action@v2.2.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
