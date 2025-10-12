@@ -1,0 +1,95 @@
+name: 🐛 버그 제보
+description: 버그나 오류를 발견하셨나요? 제보해주세요!
+title: "[버그] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        JHL GitHub Desktop의 버그를 제보해 주셔서 감사합니다.
+        아래 양식을 작성하여 문제를 자세히 설명해 주세요.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 버그 설명
+      description: 발견한 버그에 대해 명확하고 간결하게 설명해 주세요.
+      placeholder: 어떤 문제가 발생했나요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 재현 방법
+      description: 버그를 재현하는 단계를 자세히 설명해 주세요.
+      placeholder: |
+        1. '...' 메뉴로 이동
+        2. '...' 버튼 클릭
+        3. '...' 입력
+        4. 오류 발생
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 예상 동작
+      description: 어떤 동작이 일어나야 한다고 예상했나요?
+      placeholder: 정상적으로 작동했다면 어떻게 동작해야 했나요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 실제 동작
+      description: 실제로 어떤 일이 발생했나요?
+      placeholder: 실제로 어떤 동작이 일어났나요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 스크린샷
+      description: 가능하다면 스크린샷을 첨부해 주세요.
+      placeholder: 스크린샷을 드래그 앤 드롭하거나 붙여넣기 하세요.
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: 운영체제
+      description: 어떤 운영체제에서 문제가 발생했나요?
+      options:
+        - Windows
+        - macOS
+        - Linux
+      multiple: true
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: 버전 정보
+      description: JHL GitHub Desktop의 버전을 입력해 주세요. (상단 툴바에서 확인 가능)
+      placeholder: "예: v1.0.0"
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 로그 또는 오류 메시지
+      description: 관련된 로그나 오류 메시지가 있다면 붙여넣기 해주세요.
+      placeholder: |
+        로그나 오류 메시지를 여기에 붙여넣기 하세요.
+      render: shell
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 추가 정보
+      description: 이 버그에 대해 추가로 제공할 정보가 있나요?
+      placeholder: 다른 관련 정보나 컨텍스트를 자유롭게 작성해 주세요.
